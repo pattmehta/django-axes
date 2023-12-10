@@ -1,7 +1,40 @@
 django-axes
 -------------
 
-[![Jazzband](https://jazzband.co/static/img/badge.svg)](https://jazzband.co/) [![GitHub](https://img.shields.io/github/stars/jazzband/django-axes.svg?label=Stars&style=socialcA)](https://github.com/jazzband/django-axes) [![PyPI release](https://img.shields.io/pypi/v/django-axes.svg)](https://pypi.org/project/django-axes/) [![Supported Python versions](https://img.shields.io/pypi/pyversions/django-axes.svg)](https://pypi.org/project/django-axes/) [![Supported Django versions](https://img.shields.io/pypi/djversions/django-axes.svg)](https://pypi.org/project/django-axes/) [![Documentation](https://img.shields.io/readthedocs/django-axes.svg)](https://django-axes.readthedocs.io/) [![Coverage](https://codecov.io/gh/jazzband/django-axes/branch/master/graph/badge.svg)](https://codecov.io/gh/jazzband/django-axes)
+
+.. image:: https://github.com/pattmehta/django-axes/actions/workflows/codeql.yml/badge.svg?branch=pattmehta-urls-infer-type
+   :target: https://github.com/pattmehta/django-axes/actions/workflows/codeql.yml
+   :alt: Code Scanning - Action
+
+|
+
+.. image:: https://jazzband.co/static/img/badge.svg
+   :target: https://jazzband.co/
+   :alt: Jazzband
+
+.. image:: https://img.shields.io/github/stars/jazzband/django-axes.svg?label=Stars&style=socialcA
+   :target: https://github.com/jazzband/django-axes
+   :alt: GitHub
+
+.. image:: https://img.shields.io/pypi/v/django-axes.svg
+   :target: https://pypi.org/project/django-axes/
+   :alt: PyPI release
+
+.. image:: https://img.shields.io/pypi/pyversions/django-axes.svg
+   :target: https://pypi.org/project/django-axes/
+   :alt: Supported Python versions
+
+.. image:: https://img.shields.io/pypi/djversions/django-axes.svg
+   :target: https://pypi.org/project/django-axes/
+   :alt: Supported Django versions
+
+.. image:: https://img.shields.io/readthedocs/django-axes.svg
+   :target: https://django-axes.readthedocs.io/
+   :alt: Documentation
+
+.. image:: https://codecov.io/gh/jazzband/django-axes/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/jazzband/django-axes
+   :alt: Coverage
 
 Axes is a Django plugin for keeping track of suspicious
 login attempts for your Django based website
