@@ -1,4 +1,12 @@
 DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": ":memory:"}}
+SITE_ID = 1
+ROOT_URLCONF = "tests.urls"
+SECRET_KEY = "too-secret-for-test"
+USE_I18N = False
+USE_TZ = False
+LOGIN_REDIRECT_URL = "/admin/"
+AXES_FAILURE_LIMIT = 10
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 CACHES = {
     "default": {
@@ -9,7 +17,6 @@ CACHES = {
     }
 }
 
-SITE_ID = 1
 
 MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
@@ -19,17 +26,18 @@ MIDDLEWARE = [
     "axes.middleware.AxesMiddleware",
 ]
 
+
 AUTHENTICATION_BACKENDS = [
     "axes.backends.AxesStandaloneBackend",
     "django.contrib.auth.backends.ModelBackend",
 ]
+
 
 # Use MD5 for tests as it is considerably faster than other options
 # note that this should never be used in any online setting
 # where users actually log in to the system due to easy exploitability
 PASSWORD_HASHERS = ["django.contrib.auth.hashers.MD5PasswordHasher"]
 
-ROOT_URLCONF = "tests.urls"
 
 INSTALLED_APPS = [
     "django.contrib.auth",
@@ -40,6 +48,7 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "axes",
 ]
+
 
 TEMPLATES = [
     {
@@ -57,21 +66,10 @@ TEMPLATES = [
     }
 ]
 
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
     "handlers": {"console": {"class": "logging.StreamHandler"}},
     "loggers": {"axes": {"handlers": ["console"], "level": "INFO", "propagate": False}},
 }
-
-SECRET_KEY = "too-secret-for-test"
-
-USE_I18N = False
-
-USE_TZ = False
-
-LOGIN_REDIRECT_URL = "/admin/"
-
-AXES_FAILURE_LIMIT = 10
-
-DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
