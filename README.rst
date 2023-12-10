@@ -2,10 +2,13 @@ django-axes
 -------------
 
 
-.. image:: https://github.com/pattmehta/django-axes/actions/workflows/codeql.yml/badge.svg?branch=pattmehta-urls-infer-type
+.. image:: https://github.com/pattmehta/django-axes/actions/workflows/codeql.yml/badge.svg?branch=master
    :target: https://github.com/pattmehta/django-axes/actions/workflows/codeql.yml
    :alt: Code Scanning - Action
 
+.. image:: https://github.com/pattmehta/django-axes/actions/workflows/test.yml/badge.svg?branch=master
+   :target: https://github.com/pattmehta/django-axes/actions/workflows/test.yml
+   :alt: Test
 |
 
 .. image:: https://jazzband.co/static/img/badge.svg
